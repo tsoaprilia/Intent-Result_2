@@ -6,7 +6,16 @@
 
 # Intent Result
 
-Intent result merupakan suatu objek yang terdapat dalam suatu activity dimana objek tersebut dapat komunikasi dengan activity yang lain, baik activity pada fungsi internal android misal seperti memanggil activity dalam satu package atau beda package yang masih berada dalam satu project.
+Intent merupakan suatu objek yang terdapat dalam suatu activity dimana objek tersebut dapat komunikasi dengan activity yang lain, baik activity pada fungsi internal android misal seperti memanggil activity dalam satu package atau beda package yang masih berada dalam satu project.
+
+Ada tiga penggunaan umum intent :
+
+1. Memindahkan satu activity ke activity lain dengan atau tidak membawa data.
+2. Menjalankan background service, misalnya melakukan sinkronisasi ke server dan menjalankan proses berulang (periodic/scheduler task).
+3. Mengirimkan obyek broadcast ke aplikasi yang membutuhkan. Misal, ketika aplikasi membutuhkan proses menjalankan sebuah background service setiap kali aplikasi selesai melakukan booting. Aplikasi harus bisa menerima obyek broadcast yang dikirimkan oleh sistem Android untuk event booting tersebut.
+
+Pada Intent Result ini dapat mengirim data ke activity lainnya (pindah halaman dengan membawa data) . Ada 2 cara untuk mengirimkan data/nilai antar activity didalam aplikasi Android, yaitu dengan menggunakan Intent dan Bundle, keduanya mempunyai fungsi yang sama, yaitu untuk passing data, tetapi dengan menggunakan Bundle, akan terlihat lebih rapi, karena dikemas terlebuh dahulu didalam bundle sebelum dikirimkan.
+
 
 # Penerapan Intent Result
 
@@ -24,5 +33,8 @@ Intent result merupakan suatu objek yang terdapat dalam suatu activity dimana ob
 
 # Kesimpulan
 
-Intent adalah sebuah kelas dalam programming Android yang berfungsi untuk perpindahan halaman. Intent juga merupakan suatu objek yang terdapat dalam suatu activity dimana objek tersebut dapat komunikasi dengan activity yang lain, baik activity pada fungsi internal android misal seperti memanggil activity dalam satu package atau beda package yang masih berada dalam satu project.
+Intent adalah sebuah kelas dalam programming Android yang berfungsi untuk perpindahan halaman. Intent juga merupakan suatu objek yang terdapat dalam suatu activity dimana objek tersebut dapat komunikasi dengan activity yang lain, baik activity pada fungsi internal android misal seperti memanggil activity dalam satu package atau beda package yang masih berada dalam satu project. Intent Result dapat mengirim data ke activity lainnya (pindah halaman dengan membawa data) . Ada 2 cara untuk mengirimkan data/nilai antar activity didalam aplikasi Android, yaitu dengan menggunakan Intent dan Bundle, keduanya mempunyai fungsi yang sama, yaitu untuk passing data, tetapi dengan menggunakan Bundle, akan terlihat lebih rapi, karena dikemas terlebuh dahulu didalam bundle sebelum dikirimkan.
+
+## TERIMAKASIH :)
+
 
