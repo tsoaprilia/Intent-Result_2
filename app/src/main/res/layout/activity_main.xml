@@ -3,14 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/simpleee"
     tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="welcome"
+        android:textColor="#FFFFFF"
+        android:textSize="25pt"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/text_view_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_below="@+id/text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         android:gravity="center"
+        android:fontFamily="casual"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#514F4F"
+        android:textSize="8pt"
         android:text="Yuk Masukkan Nama" />
 
     <Button
@@ -19,8 +39,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_view_result"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="12dp"
-        android:text="Edit Name" />
+        android:layout_marginTop="25dp"
+        android:fontFamily="casual"
+        android:text="Edit Name"
+        android:textSize="9pt" />
 
 </RelativeLayout>
 
